@@ -1,0 +1,91 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    }
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background: #e5e5e5;
+}
+.grid-principal {
+    background-color: white;
+    width: 35%;
+    height: auto;
+    display: grid;
+    justify-self: center;
+    grid-template-rows: repeat(3, auto);
+    }
+
+header {
+    display: grid;
+    width: 100%;
+    height: 80px;
+    justify-self: center;
+    grid-template-columns: 20% 80%;
+}
+header div {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+}
+header div h1 {
+    font-size: 1.7rem;
+    align-self: end;
+}
+header div p {
+    padding-top: 5px;
+    font-size: 1rem;
+    color: grey;
+}
+header img {
+    margin-left: 10px;
+    border-radius: 50%;
+    align-self: center;
+}
+main {
+    width: 100%;
+    color: grey;
+}
+main p {
+    padding: 5px;
+}
+footer {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+footer .section1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+}
+footer .section1 button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: grey;
+    height: 50%;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+}
+footer .section1 button:hover {
+    color: black;
+    background-color:whitesmoke;
+}
+footer .section2 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-content: center;
+    justify-items: end;
+    padding-right: 20px;
+}
